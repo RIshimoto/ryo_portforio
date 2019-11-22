@@ -1,0 +1,102 @@
+.container{
+  width:300px;
+  margin: 0 auto;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+main{
+  margin-bottom:8px;
+}
+main img{
+  width:300px;
+  height: 200px;
+  vertical-align: bottom;
+}
+
+.top_box{
+  position:relative;
+}
+
+.box{
+  position:absolute;
+  top:15%;
+
+  width:300px;
+  height: 24px;
+  color:white;
+}
+
+.box_left{
+  display:inline;
+  flat:left;
+  opacity: 0.4;
+  background-color: black;
+  padding-left:10px;
+  line-height: 24px;
+}
+
+.box_right{
+    display:inline;
+    float: right;
+    opacity: 0.4;
+    background-color: black;
+    padding-right: 10px;
+    line-height: 24px;
+}
+
+.box_left:hover{
+  opacity: 1;
+}
+
+.box_right:hover{
+  opacity: 1;
+}
+
+nav{
+  margin-bottom: 8px;
+}
+
+nav li{
+  width:300px;
+  border:1px solid #dedede;
+  border-radius: 4px;
+  font-size:12px;
+  padding :4px;
+  text-align:center;
+  cursor:pointer;
+  user-select: none;
+}
+
+nav li:hover{
+  background:#f8f8f8;
+}
+#play,#pause{
+  width:290px;
+}
+.thumbnails{
+  display:grid;
+  grid-template-columns: repeat(8,33px);
+  gap:5px;
+}
+.thumbnails li{
+  cursor:pointer;
+  opacity:0.4;
+}
+.thumbnails  li:hover{
+  opacity:1;
+}
+.thumbnails  li.current{
+  opacity:1;
+}
+.thumbnails img{
+  width: 33px;
+  vertical-align: bottom;
+}
+.hidden{
+  display:none;
+}
