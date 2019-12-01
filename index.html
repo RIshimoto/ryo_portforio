@@ -1,18 +1,212 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ポートフォリオ</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>portfolio</title>
+	<!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+
+  <style>
+		body {
+			padding-top: 50px;
+			background-color: lightgray;
+		}
+
+		.jumbotron {
+			background-image: url("https://paiza-webapp.s3.amazonaws.com/files/learning/portfolio/bg.png");
+			color: white;
+		}
+
+		.starter-template {
+			padding: 40px 80px;
+			background-color: white;
+		}
+
+		.icon-size {
+			font-size: 200%;
+		}
+		.color-talk {
+ 			color: lightseagreen;
+		}
+
+		.color-wrench {
+ 			color: steelblue;
+		}
+
+		.color-heart {
+ 			color: plum;
+		}
+		.under{
+			border-bottom:solid 1px black; 
+		}
+		li{
+			list-style: none;
+		}		
+		h3 li{
+			font-size:14px;
+		}
+		img{
+			height:260px;
+			width:260px;
+			object-fit: cover;
+			vertical-align:center;
+		}
+		dt{
+			float:left;
+		}
+		dd{
+			margin-left:80px;
+		}
+		.dt-text ::after{
+			content: ":";
+		}
+	</style>
 </head>
 
 <body>
-    <h1>石元稜のポートフォリオ</h1>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+			<div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">石元稜のポートフォリオ</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+					<li><a href="#works">Works</a></li>
+					<li><a href="#skills">Skills</a></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+</header>
 
-    <nav>
-      <li><a href="intro.html">自己紹介</a></li>
-      <li><a href="works.html">成果物</a></li>
-    </nav>
-    <!-- <a href="mailto:monkey_killer_ultra_0z@yahoo.co.jp">メールはこちらへ</a> -->
-<body>
+<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1><span class="under">私のポートフォリオ</span></h1>
+					<p class="lead">明治大学2年理工学部情報科学科   石元稜</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="container">
+		<div class="starter-template">
+			<div class="row text-center">
+				<h2 id="works"></h2>
+				<div class="col-sm-4">
+					<h2 class="color-talk"><span class="glyphicon glyphicon-volume-up icon-size"></span><br>強み</h2>
+					<p>対人コミュニケーションです。
+						試食販売のアルバイトを経験した際、初勤務で目標とされていた300パックの試食を達成し、早めに勤務を上がらせてもらった経験があります。
+					</p>
+				</div>
+				<div class="col-sm-4">
+          <h2 class="color-wrench"><span class="glyphicon glyphicon-wrench icon-size"></span><br>できること</h2>
+					<ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>officeソフト</li>
+          </ul>
+				</div>
+				<div class="col-sm-4">
+					<h2 class="color-heart"><span class="glyphicon glyphicon-heart icon-size"></span><br>稼働率</h2>
+					<dl>
+						<dt>月曜日</dt>
+						<dd>13:00～終業まで可</dd>
+						<dt>水曜日</dt>
+						<dd>17:00～終業まで可</dd>
+						<dt>木曜日</dt>
+						<dd>17:00～終業まで可</dd>
+						<dt>金曜日</dt>
+						<dd>13:00～終業まで</dd>
+						<dt>土曜日・日曜日</dt>
+						<dd>終日可</dd>
+					</dl>
+				</div>
+			</div>
+      <hr>
+      
+        <h2 id="works"><a href="works.html">Works</a></h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>ポモドーロ・テクニック用<br>ストップウォッチ</h3>
+            <p>説明：「25分の作業＋5分の休憩」を1ポモドーロとし、 4ポモドーロごとに30分間の休憩をとることを繰り返す時間管理術として知られる、 ポモドーロ・テクニック用のストップウォッチをHTML5+CSS3、JavaScriptを用いて作りました。<br>
+            
+              便宜上のため、「5秒の作業→3秒の休憩」を4回繰り返した後に 20秒間の休憩を取れるよう設定しました。
+            </p>
+          </div>
+          <div class="col-sm-6">
+							<a href="stopwatch/index.html"><img src="stopwatch/kitchen_timer.png" class="img-responsive"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>おみくじ</h3>
+            <p>説明：ボタンを押すごとに「大吉」、「中吉」、「凶」が出るボタンをHTML、CSS3、JavaScriptを用いて作りました。
+              ちなみに凶を多めにしています。</p>
+            </div>
+            <div class="col-sm-6">
+								<a href="Omikugi/index.html"><img src="Omikugi/omikuji.png"  class="img-responsive"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>スライドショー</h3>
+              <p>説明：JavaScriptを用いて画像をスライドさせるものを作りました。
+                一定時間が経過すると自動的に画像が変わり、またクリックすることでも
+                画像を変えることができます。</p>
+              </div>
+              <div class="col-sm-6">
+									<a href="MySlideshow/index.html"><img src="MySlideshow/img/slideshow.png" class="img-responsive"></a>
+              </div>
+						</div>
+						<div class="row">
+								<div class="col-sm-12">
+									<h3>Others</h3>
+									<ul>
+										<li><a href="https://twitter.com/aiwo_dempani">Twitter</a></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+			
+			<hr>
+			<h2 id="skills">その他</h2>
+			<div class="row">
+				<div class="col-sm-12">
+					<h3>Programing Language</h3>
+					<ul>
+						<li>C言語</li>
+						<li>Java</li>
+						<li>Python</li>
+					</ul>
+				</div>
+			</div>
+			<a class="btn btn-primary pull-right" href="#">Topに戻る</a>
+			<p></p>
+		</div>
+	</div>
+	<!-- /.container -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
 </html>
+
